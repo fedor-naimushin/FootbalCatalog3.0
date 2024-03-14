@@ -4,7 +4,7 @@ public record FootballerRequest(
     string FirstName,
     string LastName,
     string Gender,
-    DateTime DataTime,
+    DateOnly Birthday,
     string TeamTitle,
     string Country
 );

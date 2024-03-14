@@ -1,0 +1,13 @@
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\bin\Debug\net8.0\FootballerCatalog.DataBase.deps.json
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\bin\Debug\net8.0\FootballerCatalog.DataBase.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\bin\Debug\net8.0\FootballerCatalog.DataBase.pdb
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\FootballerCatalog.DataBase.csproj.AssemblyReference.cache
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\FootballerCatalog.DataBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\FootballerCatalog.DataBase.AssemblyInfoInputs.cache
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\FootballerCatalog.DataBase.AssemblyInfo.cs
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\FootballerCatalog.DataBase.csproj.CoreCompileInputs.cache
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\FootballerCatalog.DataBase.sourcelink.json
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\FootballerCatalog.DataBase.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\refint\FootballerCatalog.DataBase.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\FootballerCatalog.DataBase.pdb
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\ref\FootballerCatalog.DataBase.dll

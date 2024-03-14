@@ -1,0 +1,12 @@
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\bin\Debug\net8.0\FootballerCatalog.Contracts.deps.json
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\bin\Debug\net8.0\FootballerCatalog.Contracts.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\bin\Debug\net8.0\FootballerCatalog.Contracts.pdb
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\obj\Debug\net8.0\FootballerCatalog.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\obj\Debug\net8.0\FootballerCatalog.Contracts.AssemblyInfoInputs.cache
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\obj\Debug\net8.0\FootballerCatalog.Contracts.AssemblyInfo.cs
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\obj\Debug\net8.0\FootballerCatalog.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\obj\Debug\net8.0\FootballerCatalog.Contracts.sourcelink.json
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\obj\Debug\net8.0\FootballerCatalog.Contracts.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\obj\Debug\net8.0\refint\FootballerCatalog.Contracts.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\obj\Debug\net8.0\FootballerCatalog.Contracts.pdb
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Contracts\obj\Debug\net8.0\ref\FootballerCatalog.Contracts.dll
