@@ -1,6 +1,6 @@
 ﻿using FootballerCatalog.Application.Services;
 using FootballerCatalog.Contracts.Footballer;
-
+using FootballerCatalog.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FootballerCatalog.Controllers;
@@ -33,5 +33,23 @@ public class FootballerCatalogController : ControllerBase
             ));
 
         return Ok(response);
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<Guid>> CreateFootballer([FromBody] FootballerRequest request)
+    {
+        var footballer = new Footballer(
+            Guid.NewGuid(),
+            request.FirstName,
+            request.LastName,
+            request.Gender,
+            request.Birthday,
+            request.TeamTitle,
+            request.Country
+        );
+
+        var id= await _footballerService.CreateFootballer(footballer);
+
+        return Ok(id);
     }
 }
