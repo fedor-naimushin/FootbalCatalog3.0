@@ -1,4 +1,7 @@
+using FootballerCatalog.Application.Services;
 using FootballerCatalog.DataBase;
+using FootballerCatalog.DataBase.Repositories;
+using FootballerCatalog.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +15,9 @@ var builder = WebApplication.CreateBuilder(args);
     {
         options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
     });
+
+    builder.Services.AddScoped<IFootballersService, FootballersService>();
+    builder.Services.AddScoped<IFootballersRepository, FootballersRepository>();
 }
 
 var app = builder.Build();

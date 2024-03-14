@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FootballerCatalog.Application\FootballerCatalog.Application.csproj" />
     <ProjectReference Include="..\FootballerCatalog.Contracts\FootballerCatalog.Contracts.csproj" />
     <ProjectReference Include="..\FootballerCatalog.DataBase\FootballerCatalog.DataBase.csproj" />
     <ProjectReference Include="..\FootballerCatalog.Domain\FootballerCatalog.Domain.csproj" />

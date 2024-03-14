@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "v8D1hbFt2v+SLWtrCco+jhowvT8rb+bluig3sk6SeJ0=",
-  "Source": "FootballerCatalog",
-  "BasePath": "_content/FootballerCatalog",
+  "Hash": "IwmzQ/HgCBSiGIfI8GQ4RANeXN3Hgxo8RPiyJwxS3qk=",
+  "Source": "FootballerCatalog.Api",
+  "BasePath": "_content/FootballerCatalog.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

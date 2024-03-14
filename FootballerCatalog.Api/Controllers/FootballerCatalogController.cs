@@ -1,6 +1,7 @@
-﻿using FootballerCatalog.Contracts.Footballer;
+﻿using FootballerCatalog.Application.Services;
+using FootballerCatalog.Contracts.Footballer;
 using FootballerCatalog.Models;
-using FootballerCatalog.Services.Footballer;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace FootballerCatalog.Controllers;
@@ -9,9 +10,9 @@ namespace FootballerCatalog.Controllers;
 [Route("[controller]")]
 public class FootballerCatalogController : ControllerBase
 {
-    private readonly IFootballerService _footballerService;
+    private readonly IFootballersService _footballerService;
 
-    public FootballerCatalogController(IFootballerService footballerService)
+    public FootballerCatalogController(IFootballersService footballerService)
     {
         _footballerService = footballerService;
     }
@@ -19,33 +20,7 @@ public class FootballerCatalogController : ControllerBase
     [HttpPost]
     public IActionResult CreateFootballer(FootballerRequest request)
     {
-        var footballer = new Footballer(
-            Guid.NewGuid(),
-            request.FirstName,
-            request.LastName,
-            request.Gender,
-            request.Birthday,
-            request.TeamTitle,
-            request.Country
-        );
-        
-        _footballerService.Create(footballer);
-        
-        var response = new FootballerResponse(
-            footballer.Id,
-            footballer.FirstName,
-            footballer.LastName,
-            footballer.Gender,
-            footballer.Birthday,
-            footballer.TeamTitle,
-            footballer.Country
-        );
-        
-        return CreatedAtAction(
-            nameof(GetFootballer),
-            new {id = footballer.Id},
-            value: response
-        );
+        return Ok(request);
     }
 
     [HttpGet("{id:guid}")]
