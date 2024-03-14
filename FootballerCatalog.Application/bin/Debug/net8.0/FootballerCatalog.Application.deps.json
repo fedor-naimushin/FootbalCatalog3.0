@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FootballerCatalog.Application/1.0.0": {
+        "dependencies": {
+          "FootballerCatalog.Domain": "1.0.0"
+        },
+        "runtime": {
+          "FootballerCatalog.Application.dll": {}
+        }
+      },
+      "FootballerCatalog.Domain/1.0.0": {
+        "runtime": {
+          "FootballerCatalog.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FootballerCatalog.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FootballerCatalog.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -155,3 +155,5 @@ C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\obj\Debug\net8.0\refin
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\obj\Debug\net8.0\FootballerCatalog.Api.pdb
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\obj\Debug\net8.0\FootballerCatalog.Api.genruntimeconfig.cache
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\obj\Debug\net8.0\ref\FootballerCatalog.Api.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\bin\Debug\net8.0\FootballerCatalog.Application.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\bin\Debug\net8.0\FootballerCatalog.Application.pdb

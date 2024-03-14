@@ -1,6 +1,5 @@
 ﻿using FootballerCatalog.Application.Services;
 using FootballerCatalog.Contracts.Footballer;
-using FootballerCatalog.Models;
 
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,27 +16,22 @@ public class FootballerCatalogController : ControllerBase
         _footballerService = footballerService;
     }
 
-    [HttpPost]
-    public IActionResult CreateFootballer(FootballerRequest request)
+    [HttpGet]
+    public async Task<ActionResult<List<FootballerResponse>>> GetAllFootballers()
     {
-        return Ok(request);
-    }
+        var footballers = await _footballerService.GetAllFootballers();
 
-    [HttpGet("{id:guid}")]
-    public IActionResult GetFootballer(Guid id)
-    {
-        return Ok(id);
-    }
+        var response = footballers
+            .Select(f => new FootballerResponse(
+                f.Id,
+                f.FirstName,
+                f.LastName,
+                f.Gender,
+                f.Birthday,
+                f.TeamTitle,
+                f.Country
+            ));
 
-    [HttpPut("{id:guid}")]
-    public IActionResult UpsertFootballer(Guid id, UpsertFootballerRequest request)
-    {
-        return Ok(request);
-    }
-
-    [HttpDelete("{id:guid}")]
-    public IActionResult DeleteFootballer(Guid id)
-    {
-        return Ok(id);
+        return Ok(response);
     }
 }
