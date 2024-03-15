@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "27+IllPCrcTXGyPiP6c1TkV/Hctspl7R1lmXtFtS2F3M8AjkFNigDoVYyKPt/rBbUtLvTikzwCPP6OJ0/QAUaQ==",
+  "dgSpecHash": "i678FAeq9LmI9TcQptEPBs3J+I1v2CeI9DLmlaQvlc2D63SMM0fYt+eEU/p8DSKdpRmy9CYXj+eUdo7FbTWqHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\nicen\\vs\\FootballerCatalog\\FootballerCatalog.DataBase\\FootballerCatalog.DataBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicen\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\nicen\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\nicen\\.nuget\\packages\\erroror\\1.10.0\\erroror.1.10.0.nupkg.sha512",
     "C:\\Users\\nicen\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\nicen\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\nicen\\.nuget\\packages\\microsoft.data.sqlclient\\5.2.0-preview5.24024.3\\microsoft.data.sqlclient.5.2.0-preview5.24024.3.nupkg.sha512",

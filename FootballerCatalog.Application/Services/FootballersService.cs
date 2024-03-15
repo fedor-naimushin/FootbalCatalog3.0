@@ -1,6 +1,7 @@
 ﻿using FootballerCatalog.Contracts.Footballer;
 using FootballerCatalog.Domain.Interfaces;
 using FootballerCatalog.Models;
+using ErrorOr;
 
 namespace FootballerCatalog.Application.Services;
 
@@ -18,18 +19,42 @@ public class FootballersService : IFootballersService
         return await _footballersRepository.GetAll();
     }
 
-    public async Task<Guid> CreateFootballer(Footballer footballer)
+    public async Task<ErrorOr<Footballer>> GetById(Guid id)
     {
-        return await _footballersRepository.Create(footballer);
+        var footballer = await _footballersRepository.GeById(id);
+        
+        if (footballer != null)
+            return footballer;
+
+        return ErrorsService.Footballer.NotFound;
+
     }
 
-    public async Task<Guid> UpdateFootballer(Guid id, FootballerRequest request)
+    public async Task<ErrorOr<Created>> CreateFootballer(Footballer footballer)
     {
-        return await _footballersRepository.Update(id, request);
+        await _footballersRepository.Create(footballer);
+
+        return Result.Created;
     }
 
-    public async Task<Guid> DeleteFootballer(Guid id)
+    public async Task<ErrorOr<Updated>> UpdateFootballer(Guid id, FootballerRequest request)
     {
-        return await _footballersRepository.Delete(id);
+       var updatedId = await _footballersRepository.Update(id, request);
+       
+       if (updatedId == null)
+           return ErrorsService.Footballer.NotFound;
+       
+       return Result.Updated;
+    }
+
+    public async Task<ErrorOr<Deleted>> DeleteFootballer(Guid id)
+    {
+        /*var responseId = */
+        await _footballersRepository.Delete(id);
+
+        /*if (responseId == null)
+            return ErrorsService.Footballer.NotFound;*/
+
+        return Result.Deleted;
     }
 }

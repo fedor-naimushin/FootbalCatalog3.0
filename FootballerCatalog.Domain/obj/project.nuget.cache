@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UCf5E88f5jBmUQ0p9K7XDdOsJJB/rxFK+Bj2ax5bCQeElz6aTMTzprtp0V5LvEOxqc0aZu4yO3T84KCaufLjZg==",
+  "dgSpecHash": "b1sRu7jilTebnHLJXztBHSFoghvjW68hN3llLzYPET+vo/pGrR7+quCeRUowjkMg6SZbvxOUZlumUFvL4vAGSA==",
   "success": true,
   "projectFilePath": "C:\\Users\\nicen\\vs\\FootballerCatalog\\FootballerCatalog.Domain\\FootballerCatalog.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nicen\\.nuget\\packages\\erroror\\1.10.0\\erroror.1.10.0.nupkg.sha512"
+  ],
   "logs": []
 }

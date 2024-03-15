@@ -10,4 +10,8 @@
       <ProjectReference Include="..\FootballerCatalog.Contracts\FootballerCatalog.Contracts.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="ErrorOr" Version="1.10.0" />
+    </ItemGroup>
+
 </Project>

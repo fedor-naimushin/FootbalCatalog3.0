@@ -10,4 +10,8 @@
       <ProjectReference Include="..\FootballerCatalog.Domain\FootballerCatalog.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="ErrorOr" Version="1.10.0" />
+    </ItemGroup>
+
 </Project>

@@ -6,9 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FootballerCatalog.Controllers;
 
-[ApiController]
-[Route("[controller]")]
-public class FootballerCatalogController : ControllerBase
+public class FootballerCatalogController : ApiController
 {
     private readonly IFootballersService _footballerService;
 
@@ -36,8 +34,19 @@ public class FootballerCatalogController : ControllerBase
         return Ok(response);
     }
 
+    [HttpGet("{id:guid}")]
+    public async Task<IActionResult> GetById(Guid id)
+    {
+        var getFootballer = await _footballerService.GetById(id);
+
+        return getFootballer.Match(
+            footballer => Ok(MapFootballerResponse(footballer)),
+            errors => Problem(errors)
+        );
+    }
+
     [HttpPost]
-    public async Task<ActionResult<Guid>> CreateFootballer([FromBody] FootballerRequest request)
+    public async Task<IActionResult> CreateFootballer([FromBody] FootballerRequest request)
     {
         var footballer = new Footballer(
             Guid.NewGuid(),
@@ -49,24 +58,69 @@ public class FootballerCatalogController : ControllerBase
             request.Country
         );
 
-        var id= await _footballerService.CreateFootballer(footballer);
+        var createdResult = await _footballerService.CreateFootballer(footballer);
 
-        return Ok(id);
+        if (createdResult.IsError)
+        {
+            return Problem(createdResult.Errors);
+        }
+
+        return CreatedAtAction(
+            actionName: nameof(GetById),
+            routeValues: new { id = footballer.Id },
+            value: MapFootballerResponse(footballer)
+        );
     }
 
     [HttpPut("{id:guid}")]
-    public async Task<ActionResult<Guid>> UpdateFootballer(Guid id, [FromBody] FootballerRequest request)
+    public async Task<IActionResult> UpdateFootballer(Guid id, [FromBody] FootballerRequest request)
     {
-        var footballerId = await _footballerService.UpdateFootballer(id, request);
-
-        return Ok(footballerId);
+        var footballer = new Footballer(
+            Guid.NewGuid(),
+            request.FirstName,
+            request.LastName,
+            request.Gender,
+            request.Birthday,
+            request.TeamTitle,
+            request.Country
+        );
+        
+        var updateResult = await _footballerService.UpdateFootballer(id, request);
+        
+        if (updateResult.IsError)
+        {
+            return Problem(updateResult.Errors);
+        }
+        
+        return updateResult.Match(
+            f => Ok(MapFootballerResponse(footballer)),
+            errors => Problem(errors)
+        );
     }
 
     [HttpDelete("{id:guid}")]
-    public async Task<ActionResult<Guid>> DeleteFootballer(Guid id)
+    public async Task<IActionResult> DeleteFootballer(Guid id)
     {
-        var footballerId = await _footballerService.DeleteFootballer(id);
+        var deletedResult = await _footballerService.DeleteFootballer(id);
 
-        return Ok(footballerId);
+        return deletedResult.Match(
+            deleted => NoContent(),
+            errors => Problem(errors)
+        );
+    }
+
+
+    private static Footballer MapFootballerResponse(Footballer footballer)
+    {
+        var response = new Footballer(
+            footballer.Id,
+            footballer.FirstName,
+            footballer.LastName,
+            footballer.Gender,
+            footballer.Birthday,
+            footballer.TeamTitle,
+            footballer.Country
+        );
+        return response;
     }
 }

@@ -36,9 +36,28 @@ public class FootballersRepository : IFootballersRepository
         return footballers;
     }
 
+    public async Task<Footballer?> GeById(Guid id)
+    {
+        var entity = await _context.Footballers
+            .FindAsync(id);
+
+        if (entity == null)
+            return null;
+        
+        return new Footballer(
+            entity.Id,
+            entity.FirstName,
+            entity.LastName,
+            entity.Gender,
+            entity.Birthday,
+            entity.TeamTitle,
+            entity.Country
+        );
+    }
+
     public async Task<Guid> Create(Footballer footballer)
     {
-        var footballerEntity = new FootballerEntity()
+        var footballerEntity = new FootballerEntity
         {
             Id = footballer.Id,
             FirstName = footballer.FirstName,
@@ -55,8 +74,15 @@ public class FootballersRepository : IFootballersRepository
         return footballerEntity.Id;
     }
 
-    public async Task<Guid> Update(Guid id, FootballerRequest request)
+    public async Task<Guid?> Update(Guid id, FootballerRequest request)
     {
+        var entity = await _context.Footballers.FindAsync(id);
+
+        if (entity == null)
+        {
+            return null;
+        }
+        
         await _context.Footballers
             .Where(f => f.Id == id)
             .ExecuteUpdateAsync(s => s
@@ -70,8 +96,13 @@ public class FootballersRepository : IFootballersRepository
         return id;
     }
 
-    public async Task<Guid> Delete(Guid id)
+    public async Task<Guid?> Delete(Guid id)
     {
+        var entity = await _context.Footballers.FindAsync(id);
+
+        if (entity == null)
+            return null;
+        
         await _context.Footballers
             .Where(f => f.Id == id)
             .ExecuteDeleteAsync();

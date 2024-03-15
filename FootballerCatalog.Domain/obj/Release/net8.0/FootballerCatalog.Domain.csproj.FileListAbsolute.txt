@@ -1,0 +1,16 @@
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\bin\Release\net8.0\FootballerCatalog.Domain.deps.json
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\bin\Release\net8.0\FootballerCatalog.Domain.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\bin\Release\net8.0\FootballerCatalog.Domain.pdb
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\bin\Release\net8.0\FootballerCatalog.Contracts.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\bin\Release\net8.0\FootballerCatalog.Contracts.pdb
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Release\net8.0\FootballerCatalog.Domain.csproj.AssemblyReference.cache
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Release\net8.0\FootballerCatalog.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Release\net8.0\FootballerCatalog.Domain.AssemblyInfoInputs.cache
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Release\net8.0\FootballerCatalog.Domain.AssemblyInfo.cs
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Release\net8.0\FootballerCatalog.Domain.csproj.CoreCompileInputs.cache
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Release\net8.0\FootballerCatalog.Domain.sourcelink.json
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Release\net8.0\Football.1A0ECF7B.Up2Date
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Release\net8.0\FootballerCatalog.Domain.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Release\net8.0\refint\FootballerCatalog.Domain.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Release\net8.0\FootballerCatalog.Domain.pdb
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Release\net8.0\ref\FootballerCatalog.Domain.dll

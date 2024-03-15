@@ -1,6 +1,70 @@
 @FootballerCatalog_HostAddress = http://localhost:5195
 
+### Get All
 GET {{FootballerCatalog_HostAddress}}/FootballerCatalog
 Accept: application/json
 
-###
+### Get by Id ( 200 OK )
+
+@id = 1454fd98-32b6-4d55-87c5-55e1f2b33509
+GET {{FootballerCatalog_HostAddress}}/FootballerCatalog/{{id}}
+
+### Get by Id (404 Not Found)
+
+@badId = 1454fd98-32b6-4d55-87c5-55e1f2b33508
+GET {{FootballerCatalog_HostAddress}}/FootballerCatalog/{{badId}}
+
+
+
+### Put( 200 OK)
+@putId = 1454fd98-32b6-4d55-87c5-55e1f2b33509
+PUT {{FootballerCatalog_HostAddress}}/FootballerCatalog/{{putId}}
+Content-Type: application/json
+
+{
+  "firstName": "Кисина",
+  "lastName": "Кошечка",
+  "gender": "Женский",
+  "birthday": "2020-02-20",
+  "teamTitle": "Котики",
+  "country": "Корея"
+}
+
+### Put ()
+@badPutId = 1454fd98-32b6-4d55-87c5-55e1f2b33508
+PUT {{FootballerCatalog_HostAddress}}/FootballerCatalog/{{badPutId}}
+Content-Type: application/json
+
+{
+  "firstName": "BadTest2",
+  "lastName": "Кошечка",
+  "gender": "Женский",
+  "birthday": "2020-02-20",
+  "teamTitle": "Котики",
+  "country": "Корея"
+}
+
+
+
+### Post
+
+POST {{FootballerCatalog_HostAddress}}/FootballerCatalog
+Content-Type: application/json
+
+{
+  "firstName": "PostTest",
+  "lastName": "Кошечка",
+  "gender": "Женский",
+  "birthday": "2020-02-20",
+  "teamTitle": "Котики",
+  "country": "Корея"
+}
+
+
+### Delete
+@deleteId = db880d95-6a6d-454a-87ec-e1959d06f885
+DELETE {{FootballerCatalog_HostAddress}}/FootballerCatalog/{{deleteId}}
+
+### Delete
+@badDeleteId = 1454fd98-32b6-4d55-87c5-55e1f2b33506
+DELETE {{FootballerCatalog_HostAddress}}/FootballerCatalog/{{badDeleteId}}

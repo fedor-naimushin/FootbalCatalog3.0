@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "ErrorOr/1.10.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FootballerCatalog.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -16,6 +29,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "ErrorOr": "1.10.0",
           "FootballerCatalog.Contracts": "1.0.0"
         },
         "compile": {
@@ -28,6 +42,23 @@
     }
   },
   "libraries": {
+    "ErrorOr/1.10.0": {
+      "sha512": "prNLSGADVmlFJeTt+GyZ7fg3fPJz8KYDaTIO2PtWZJ3S2ZTOkF6xKIo3JT99b+w4pvIPdl9vgpQckhbN4MdKzQ==",
+      "type": "package",
+      "path": "erroror/1.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "erroror.1.10.0.nupkg.sha512",
+        "erroror.nuspec",
+        "icon-square.png",
+        "lib/net6.0/ErrorOr.dll",
+        "lib/net6.0/ErrorOr.xml",
+        "lib/netstandard2.0/ErrorOr.dll",
+        "lib/netstandard2.0/ErrorOr.xml"
+      ]
+    },
     "FootballerCatalog.Contracts/1.0.0": {
       "type": "project",
       "path": "../FootballerCatalog.Contracts/FootballerCatalog.Contracts.csproj",
@@ -41,6 +72,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "ErrorOr >= 1.10.0",
       "FootballerCatalog.Domain >= 1.0.0"
     ]
   },
@@ -86,6 +118,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "ErrorOr": {
+            "target": "Package",
+            "version": "[1.10.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
