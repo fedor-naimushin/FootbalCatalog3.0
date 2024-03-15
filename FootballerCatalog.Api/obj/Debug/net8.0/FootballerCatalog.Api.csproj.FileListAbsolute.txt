@@ -158,3 +158,6 @@ C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\obj\Debug\net8.0\ref\F
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\bin\Debug\net8.0\FootballerCatalog.Application.dll
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\bin\Debug\net8.0\FootballerCatalog.Application.pdb
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\bin\Debug\net8.0\ErrorOr.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

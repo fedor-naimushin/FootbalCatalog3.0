@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FootballerCatalog.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96633da02c1b280ce4bd696b29744bff2a0a4bb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91b3ff1dfd7c47d6343b11163ac5c7d3bc9ac9e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("FootballerCatalog.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FootballerCatalog.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

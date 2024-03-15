@@ -1,8 +1,10 @@
-﻿using FootballerCatalog.Application.Services;
+﻿using FluentValidation;
+using FootballerCatalog.Application.Services;
 using FootballerCatalog.Contracts.Footballer;
 using FootballerCatalog.Domain.Interfaces;
 using FootballerCatalog.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace FootballerCatalog.Controllers;
 
@@ -46,7 +48,7 @@ public class FootballerCatalogController : ApiController
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateFootballer([FromBody] FootballerRequest request)
+    public async Task<IActionResult> CreateFootballer(FootballerRequest request)
     {
         var footballer = new Footballer(
             Guid.NewGuid(),
@@ -84,14 +86,14 @@ public class FootballerCatalogController : ApiController
             request.TeamTitle,
             request.Country
         );
-        
+
         var updateResult = await _footballerService.UpdateFootballer(id, request);
-        
+
         if (updateResult.IsError)
         {
             return Problem(updateResult.Errors);
         }
-        
+
         return updateResult.Match(
             f => Ok(MapFootballerResponse(footballer)),
             errors => Problem(errors)

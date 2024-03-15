@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "p07JBIYisylZqCEx+v2i3dL5taTYqrx2YXr1yhaVQuwVNaDILeh90FhwccceFLE+aTxRgpPN93BpFoaaewaiKg==",
+  "dgSpecHash": "gkgh8HNgckKh2KPAnVCtU75JAL/LlHe8bJhPF4dqaQudXvdU5SAaoAd8H8GgMR27wW3Z6SOGHtlgiLYSkx8GKA==",
   "success": true,
   "projectFilePath": "C:\\Users\\nicen\\vs\\FootballerCatalog\\FootballerCatalog.Application\\FootballerCatalog.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\nicen\\.nuget\\packages\\erroror\\1.10.0\\erroror.1.10.0.nupkg.sha512"
+    "C:\\Users\\nicen\\.nuget\\packages\\erroror\\1.10.0\\erroror.1.10.0.nupkg.sha512",
+    "C:\\Users\\nicen\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,4 +1,7 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using FootballerCatalog.Application.Services;
+using FootballerCatalog.Common;
 using FootballerCatalog.DataBase;
 using FootballerCatalog.DataBase.Repositories;
 using FootballerCatalog.Domain.Interfaces;
@@ -15,6 +18,10 @@ var builder = WebApplication.CreateBuilder(args);
 
     builder.Services.AddScoped<IFootballersService, FootballersService>();
     builder.Services.AddScoped<IFootballersRepository, FootballersRepository>();
+
+    builder.Services.AddFluentValidationAutoValidation();
+    builder.Services.AddFluentValidationClientsideAdapters();
+    builder.Services.AddValidatorsFromAssemblyContaining<IAssemblyMarker>();
 }
 
 var app = builder.Build();
