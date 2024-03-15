@@ -1,4 +1,5 @@
-﻿using FootballerCatalog.Domain.Interfaces;
+﻿using FootballerCatalog.Contracts.Footballer;
+using FootballerCatalog.Domain.Interfaces;
 using FootballerCatalog.Models;
 
 namespace FootballerCatalog.Application.Services;
@@ -22,9 +23,9 @@ public class FootballersService : IFootballersService
         return await _footballersRepository.Create(footballer);
     }
 
-    public async Task<Guid> UpdateFootballer(Footballer footballer)
+    public async Task<Guid> UpdateFootballer(Guid id, FootballerRequest request)
     {
-        return await _footballersRepository.Update(footballer);
+        return await _footballersRepository.Update(id, request);
     }
 
     public async Task<Guid> DeleteFootballer(Guid id)

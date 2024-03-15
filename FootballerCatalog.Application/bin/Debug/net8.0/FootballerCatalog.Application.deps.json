@@ -14,7 +14,15 @@
           "FootballerCatalog.Application.dll": {}
         }
       },
+      "FootballerCatalog.Contracts/1.0.0": {
+        "runtime": {
+          "FootballerCatalog.Contracts.dll": {}
+        }
+      },
       "FootballerCatalog.Domain/1.0.0": {
+        "dependencies": {
+          "FootballerCatalog.Contracts": "1.0.0"
+        },
         "runtime": {
           "FootballerCatalog.Domain.dll": {}
         }
@@ -23,6 +31,11 @@
   },
   "libraries": {
     "FootballerCatalog.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FootballerCatalog.Contracts/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

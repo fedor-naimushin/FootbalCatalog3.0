@@ -14,3 +14,5 @@ C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\bin\Debug\net8.0\FootballerCatalog.Domain.dll
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\bin\Debug\net8.0\FootballerCatalog.Domain.pdb
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\obj\Debug\net8.0\Football.F2FCD5E3.Up2Date
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\bin\Debug\net8.0\FootballerCatalog.Contracts.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.DataBase\bin\Debug\net8.0\FootballerCatalog.Contracts.pdb

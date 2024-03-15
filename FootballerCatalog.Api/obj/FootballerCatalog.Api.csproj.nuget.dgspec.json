@@ -305,7 +305,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\nicen\\vs\\FootballerCatalog\\FootballerCatalog.Contracts\\FootballerCatalog.Contracts.csproj": {
+                "projectPath": "C:\\Users\\nicen\\vs\\FootballerCatalog\\FootballerCatalog.Contracts\\FootballerCatalog.Contracts.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

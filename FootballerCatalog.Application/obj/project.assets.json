@@ -2,9 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "FootballerCatalog.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/FootballerCatalog.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FootballerCatalog.Contracts.dll": {}
+        }
+      },
       "FootballerCatalog.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FootballerCatalog.Contracts": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/FootballerCatalog.Domain.dll": {}
         },
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "FootballerCatalog.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../FootballerCatalog.Contracts/FootballerCatalog.Contracts.csproj",
+      "msbuildProject": "../FootballerCatalog.Contracts/FootballerCatalog.Contracts.csproj"
+    },
     "FootballerCatalog.Domain/1.0.0": {
       "type": "project",
       "path": "../FootballerCatalog.Domain/FootballerCatalog.Domain.csproj",

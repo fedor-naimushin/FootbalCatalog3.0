@@ -10,3 +10,7 @@ C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Debug\net8.0\Fo
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Debug\net8.0\refint\FootballerCatalog.Domain.dll
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Debug\net8.0\FootballerCatalog.Domain.pdb
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Debug\net8.0\ref\FootballerCatalog.Domain.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\bin\Debug\net8.0\FootballerCatalog.Contracts.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\bin\Debug\net8.0\FootballerCatalog.Contracts.pdb
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Debug\net8.0\FootballerCatalog.Domain.csproj.AssemblyReference.cache
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Domain\obj\Debug\net8.0\Football.1A0ECF7B.Up2Date

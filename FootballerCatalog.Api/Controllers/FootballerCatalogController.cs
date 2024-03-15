@@ -1,5 +1,6 @@
 ﻿using FootballerCatalog.Application.Services;
 using FootballerCatalog.Contracts.Footballer;
+using FootballerCatalog.Domain.Interfaces;
 using FootballerCatalog.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -51,5 +52,21 @@ public class FootballerCatalogController : ControllerBase
         var id= await _footballerService.CreateFootballer(footballer);
 
         return Ok(id);
+    }
+
+    [HttpPut("{id:guid}")]
+    public async Task<ActionResult<Guid>> UpdateFootballer(Guid id, [FromBody] FootballerRequest request)
+    {
+        var footballerId = await _footballerService.UpdateFootballer(id, request);
+
+        return Ok(footballerId);
+    }
+
+    [HttpDelete("{id:guid}")]
+    public async Task<ActionResult<Guid>> DeleteFootballer(Guid id)
+    {
+        var footballerId = await _footballerService.DeleteFootballer(id);
+
+        return Ok(footballerId);
     }
 }

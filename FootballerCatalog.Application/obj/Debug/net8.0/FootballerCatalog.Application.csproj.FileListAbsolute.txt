@@ -14,3 +14,5 @@ C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Application\obj\Debug\net8
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Application\obj\Debug\net8.0\refint\FootballerCatalog.Application.dll
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Application\obj\Debug\net8.0\FootballerCatalog.Application.pdb
 C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Application\obj\Debug\net8.0\ref\FootballerCatalog.Application.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Application\bin\Debug\net8.0\FootballerCatalog.Contracts.dll
+C:\Users\nicen\vs\FootballerCatalog\FootballerCatalog.Application\bin\Debug\net8.0\FootballerCatalog.Contracts.pdb

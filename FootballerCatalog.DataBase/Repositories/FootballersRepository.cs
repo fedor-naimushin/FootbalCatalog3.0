@@ -1,4 +1,5 @@
-﻿using FootballerCatalog.DataBase.Entities;
+﻿using FootballerCatalog.Contracts.Footballer;
+using FootballerCatalog.DataBase.Entities;
 using FootballerCatalog.Domain.Interfaces;
 using FootballerCatalog.Models;
 using Microsoft.EntityFrameworkCore;
@@ -54,19 +55,19 @@ public class FootballersRepository : IFootballersRepository
         return footballerEntity.Id;
     }
 
-    public async Task<Guid> Update(Footballer footballer)
+    public async Task<Guid> Update(Guid id, FootballerRequest request)
     {
         await _context.Footballers
-            .Where(f => f.Id == footballer.Id)
+            .Where(f => f.Id == id)
             .ExecuteUpdateAsync(s => s
-                .SetProperty(f => f.FirstName, f => footballer.FirstName)
-                .SetProperty(f => f.LastName, f => footballer.LastName)
-                .SetProperty(f => f.Gender, f => footballer.Gender)
-                .SetProperty(f => f.Birthday, f => footballer.Birthday)
-                .SetProperty(f => f.TeamTitle, f => footballer.TeamTitle)
-                .SetProperty(f => f.Country, f => footballer.Country));
+                .SetProperty(f => f.FirstName, f => request.FirstName)
+                .SetProperty(f => f.LastName, f => request.LastName)
+                .SetProperty(f => f.Gender, f => request.Gender)
+                .SetProperty(f => f.Birthday, f => request.Birthday)
+                .SetProperty(f => f.TeamTitle, f => request.TeamTitle)
+                .SetProperty(f => f.Country, f => request.Country));
 
-        return footballer.Id;
+        return id;
     }
 
     public async Task<Guid> Delete(Guid id)
